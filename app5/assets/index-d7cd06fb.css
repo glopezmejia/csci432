@@ -1,0 +1,26 @@
+
+#form {
+        padding: 0 100px;
+}
+.row{ 
+        margin: 15px 0;
+}
+#searchLabel, #light, #dark, #likes, #comments, #rating {
+        margin-right: 5px;
+}
+p {
+        margin-bottom: 0;
+}
+label, .pseudo-label {
+        color: #6c6c6c;
+}
+.pseudo-text {
+        color: black;
+}
+legend {
+        font-size: 2.25rem;
+}
+h2 {
+        font-size: 1.5rem;
+}
+
