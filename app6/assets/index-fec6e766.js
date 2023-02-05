@@ -5239,11 +5239,11 @@ const OrderForm_vue_vue_type_style_index_0_lang = "";
 const _hoisted_1 = { class: "container" };
 const _hoisted_2 = {
   action: "#",
-  class: "my-5 m-lg-5",
+  class: "my-3 mx-lg-4",
   validate: ""
 };
 const _hoisted_3 = { class: "border border-white shadow-lg" };
-const _hoisted_4 = /* @__PURE__ */ createBaseVNode("header", { class: "px-5 py-3 border text-white" }, [
+const _hoisted_4 = /* @__PURE__ */ createBaseVNode("header", { class: "px-2 px-lg-5 py-3 border text-white" }, [
   /* @__PURE__ */ createBaseVNode("div", { class: "row" }, [
     /* @__PURE__ */ createBaseVNode("div", { class: "col" }, [
       /* @__PURE__ */ createBaseVNode("h1", null, "Order Form"),
@@ -5251,25 +5251,31 @@ const _hoisted_4 = /* @__PURE__ */ createBaseVNode("header", { class: "px-5 py-3
     ])
   ])
 ], -1);
-const _hoisted_5 = { class: "mt-4 px-5" };
+const _hoisted_5 = { class: "mt-4 px-2 px-lg-5" };
 const _hoisted_6 = {
   id: "nameRow",
   class: "row"
 };
 const _hoisted_7 = /* @__PURE__ */ createBaseVNode("div", { class: "col-12 col-md-4" }, [
-  /* @__PURE__ */ createBaseVNode("label", { for: "firstName" }, "Name")
+  /* @__PURE__ */ createBaseVNode("label", { for: "firstName" }, "Name"),
+  /* @__PURE__ */ createTextVNode(),
+  /* @__PURE__ */ createBaseVNode("span", null, "*")
 ], -1);
 const _hoisted_8 = { class: "col-6 col-md-4" };
 const _hoisted_9 = { class: "col-6 col-md-4" };
 const _hoisted_10 = { class: "row" };
 const _hoisted_11 = /* @__PURE__ */ createBaseVNode("div", { class: "col-12 col-md-4" }, [
-  /* @__PURE__ */ createBaseVNode("label", { for: "email" }, "Email")
+  /* @__PURE__ */ createBaseVNode("label", { for: "email" }, "Email"),
+  /* @__PURE__ */ createTextVNode(),
+  /* @__PURE__ */ createBaseVNode("span", null, "*")
 ], -1);
 const _hoisted_12 = { class: "col-12 col-md-4" };
 const _hoisted_13 = /* @__PURE__ */ createBaseVNode("div", { class: "col-12 col-md-4" }, null, -1);
 const _hoisted_14 = { class: "row" };
 const _hoisted_15 = /* @__PURE__ */ createBaseVNode("div", { class: "col-12 col-md-3" }, [
-  /* @__PURE__ */ createBaseVNode("label", { for: "greenShirt" }, "T-shirt model")
+  /* @__PURE__ */ createBaseVNode("label", { for: "greenShirt" }, "T-shirt model"),
+  /* @__PURE__ */ createTextVNode(),
+  /* @__PURE__ */ createBaseVNode("span", null, "*")
 ], -1);
 const _hoisted_16 = { class: "col-4 col-md-3 t-shirt" };
 const _hoisted_17 = /* @__PURE__ */ createBaseVNode("label", { for: "greenShirt" }, [
@@ -5297,7 +5303,9 @@ const _hoisted_21 = /* @__PURE__ */ createBaseVNode("label", { for: "redShirt" }
 ], -1);
 const _hoisted_22 = { class: "row" };
 const _hoisted_23 = /* @__PURE__ */ createBaseVNode("div", { class: "col-12 col-md-4" }, [
-  /* @__PURE__ */ createBaseVNode("label", { for: "size" }, "Size")
+  /* @__PURE__ */ createBaseVNode("label", { for: "size" }, "Size"),
+  /* @__PURE__ */ createTextVNode(),
+  /* @__PURE__ */ createBaseVNode("span", null, "*")
 ], -1);
 const _hoisted_24 = { class: "col-12 col-md-4" };
 const _hoisted_25 = /* @__PURE__ */ createStaticVNode('<option value="">---choose option---</option><option value="XS">XS</option><option value="S">S</option><option value="M">M</option><option value="L">L</option><option value="XL">XL</option>', 6);
@@ -5307,31 +5315,38 @@ const _hoisted_31 = [
 const _hoisted_32 = /* @__PURE__ */ createBaseVNode("div", { class: "col-12 col-md-4" }, null, -1);
 const _hoisted_33 = { class: "row" };
 const _hoisted_34 = /* @__PURE__ */ createBaseVNode("div", { class: "col-12 col-md-4" }, [
-  /* @__PURE__ */ createBaseVNode("label", { for: "quantity" }, "Quantity")
+  /* @__PURE__ */ createBaseVNode("label", { for: "quantity" }, "Quantity"),
+  /* @__PURE__ */ createTextVNode(),
+  /* @__PURE__ */ createBaseVNode("span", null, "*")
 ], -1);
 const _hoisted_35 = { class: "col-12 col-md-4" };
 const _hoisted_36 = /* @__PURE__ */ createBaseVNode("div", { class: "col-12 col-md-4" }, null, -1);
 const _hoisted_37 = { class: "row" };
 const _hoisted_38 = /* @__PURE__ */ createBaseVNode("div", { class: "col-12 col-md-4" }, [
-  /* @__PURE__ */ createBaseVNode("label", { for: "deliveryDate" }, "Delivery Date")
+  /* @__PURE__ */ createBaseVNode("label", { for: "deliveryDate" }, "Delivery Date"),
+  /* @__PURE__ */ createTextVNode(),
+  /* @__PURE__ */ createBaseVNode("span", null, "*")
 ], -1);
 const _hoisted_39 = { class: "col-12 col-md-4" };
 const _hoisted_40 = /* @__PURE__ */ createBaseVNode("div", { class: "col-12 col-md-4" }, null, -1);
-const _hoisted_41 = { class: "px-5 pt-2" };
-const _hoisted_42 = { class: "box pt-4" };
+const _hoisted_41 = { class: "px-2 px-lg-5 pt-2" };
+const _hoisted_42 = { class: "box pt-4 rounded" };
 const _hoisted_43 = { class: "row" };
 const _hoisted_44 = /* @__PURE__ */ createBaseVNode("div", { class: "col-12 col-md-4" }, [
   /* @__PURE__ */ createBaseVNode("label", { for: "street-1" }, "Delivery Address")
 ], -1);
 const _hoisted_45 = { class: "col-12 col-md-8" };
-const _hoisted_46 = { class: "row" };
-const _hoisted_47 = /* @__PURE__ */ createBaseVNode("div", { class: "col-0 col-md-4" }, null, -1);
-const _hoisted_48 = { class: "col-12 col-md-8" };
-const _hoisted_49 = /* @__PURE__ */ createBaseVNode("div", { class: "w-100" }, null, -1);
-const _hoisted_50 = /* @__PURE__ */ createBaseVNode("div", { class: "col-0 col-md-4" }, null, -1);
-const _hoisted_51 = { class: "col-12 col-md-8" };
-const _hoisted_52 = /* @__PURE__ */ createBaseVNode("div", { class: "col-0 col-md-4" }, null, -1);
-const _hoisted_53 = { class: "col-12 col-md-8" };
+const _hoisted_46 = /* @__PURE__ */ createBaseVNode("span", { class: "requiredInput" }, "*", -1);
+const _hoisted_47 = { class: "row" };
+const _hoisted_48 = /* @__PURE__ */ createBaseVNode("div", { class: "col-0 col-md-4" }, null, -1);
+const _hoisted_49 = { class: "col-12 col-md-8" };
+const _hoisted_50 = /* @__PURE__ */ createBaseVNode("div", { class: "w-100" }, null, -1);
+const _hoisted_51 = /* @__PURE__ */ createBaseVNode("div", { class: "col-0 col-md-4" }, null, -1);
+const _hoisted_52 = { class: "col-12 col-md-8" };
+const _hoisted_53 = /* @__PURE__ */ createBaseVNode("span", { id: "requiredSpecial" }, "*", -1);
+const _hoisted_54 = /* @__PURE__ */ createBaseVNode("div", { class: "col-0 col-md-4" }, null, -1);
+const _hoisted_55 = { class: "col-12 col-md-8" };
+const _hoisted_56 = /* @__PURE__ */ createBaseVNode("span", { class: "requiredInput" }, "*", -1);
 const _sfc_main$1 = {
   __name: "OrderForm",
   setup(__props) {
@@ -5509,12 +5524,14 @@ const _sfc_main$1 = {
                       required: ""
                     }, null, 512), [
                       [vModelText, user.deliveryAddr.st1]
-                    ])
+                    ]),
+                    createTextVNode(),
+                    _hoisted_46
                   ])
                 ]),
-                createBaseVNode("div", _hoisted_46, [
-                  _hoisted_47,
-                  createBaseVNode("div", _hoisted_48, [
+                createBaseVNode("div", _hoisted_47, [
+                  _hoisted_48,
+                  createBaseVNode("div", _hoisted_49, [
                     withDirectives(createBaseVNode("input", {
                       "onUpdate:modelValue": _cache[10] || (_cache[10] = ($event) => user.deliveryAddr.st2 = $event),
                       type: "text",
@@ -5525,9 +5542,9 @@ const _sfc_main$1 = {
                       [vModelText, user.deliveryAddr.st2]
                     ])
                   ]),
-                  _hoisted_49,
                   _hoisted_50,
-                  createBaseVNode("div", _hoisted_51, [
+                  _hoisted_51,
+                  createBaseVNode("div", _hoisted_52, [
                     withDirectives(createBaseVNode("input", {
                       "onUpdate:modelValue": _cache[11] || (_cache[11] = ($event) => user.deliveryAddr.city = $event),
                       type: "text",
@@ -5537,10 +5554,12 @@ const _sfc_main$1 = {
                       required: ""
                     }, null, 512), [
                       [vModelText, user.deliveryAddr.city]
-                    ])
+                    ]),
+                    createTextVNode(),
+                    _hoisted_53
                   ]),
-                  _hoisted_52,
-                  createBaseVNode("div", _hoisted_53, [
+                  _hoisted_54,
+                  createBaseVNode("div", _hoisted_55, [
                     withDirectives(createBaseVNode("input", {
                       "onUpdate:modelValue": _cache[12] || (_cache[12] = ($event) => user.deliveryAddr.zip = $event),
                       type: "text",
@@ -5550,7 +5569,9 @@ const _sfc_main$1 = {
                       required: ""
                     }, null, 512), [
                       [vModelText, user.deliveryAddr.zip]
-                    ])
+                    ]),
+                    createTextVNode(),
+                    _hoisted_56
                   ])
                 ])
               ]),

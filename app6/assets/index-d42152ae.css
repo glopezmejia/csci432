@@ -15,9 +15,8 @@ header {
 .t-shirt {
         text-align: center;
 }
-#size, #deliveryDate{
-        width: 11.5rem;
-        height: 2rem;
+span {
+        color: red;
 }
 .box {
         background-color: rgb(244, 244, 244);
@@ -31,4 +30,13 @@ header {
 }
 input {
         padding-left: 0.5rem;
+        width: 100%;
+}
+.requiredInput {
+        position: absolute;
+        transform: translate(-15px, 5px);
+}
+#requiredSpecial {
+        position: absolute;
+        transform: translate( -15px, 25px);
 }
