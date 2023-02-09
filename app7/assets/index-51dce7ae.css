@@ -1,0 +1,58 @@
+
+body{
+        background-color: #1b1a1a;
+}
+#photo_title {
+        color: white;
+        font-size: 1.5rem;
+}
+#photographer_name, #photographer_name a {
+        color: orange;
+}
+#photographer_name{
+        font-size: 1.25rem;
+}
+#photographer_name a {
+        text-decoration: none;
+}
+span {
+        font-size: 2rem;
+}
+#visit {
+        background-color: #1b1a1a;
+        border: orange solid 2px;
+        border-radius: 2rem;
+        padding: 0rem 1.5rem;
+}
+#image {
+        border-radius: 0.50rem;
+}
+.image_control {
+        color: white;
+        font-size: 1.5rem;
+}
+#next_btn, #prev_btn {
+        padding: 0 2rem;
+        background-color: #2e2e2e;
+        color: white;
+        border: 0;
+}
+#prev_btn:hover, #next_btn:hover {
+        background-color: #565555;
+}
+#prev_btn{
+        border-radius: 10px 0 0 10px;
+}
+#next_btn{
+        border-radius: 0 10px 10px 0;
+}
+#prev--btn {
+        text-align: start;
+}
+#next--btn {
+        text-align: end;
+}
+.img--box img {
+        max-height: 450px;
+        box-shadow: 0 0 5px 5px #2e2e2e;
+}
