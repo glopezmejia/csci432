@@ -1,0 +1,40 @@
+
+#icon {
+        width: 100px;
+        border: solid #d0d0d0 2px;
+        border-radius: 20px;
+        background-color: #d0d0d0;
+}
+.row, button {
+        margin-top: 1rem;
+}
+.row:nth-of-type(1) {
+        margin-top: 0;
+}
+label {
+        transform: translateX(1rem);
+}
+.divider {
+        background-color: #969696;
+        width: 1px;
+        height: 420px;
+        /* border: solid red 2px */
+}
+#formFile {
+        font-size: 1.1rem;
+}
+#userEmail {
+        font-style: italic;
+        color: blue;
+}
+    /* #email {
+        border: red solid 2px;
+    } */
+.incorrect-input {
+        border: red solid 2px;
+}
+@media (min-width: 768px) {
+#content {
+            margin-top: 6rem;
+}
+}
