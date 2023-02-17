@@ -5210,7 +5210,7 @@ const _hoisted_32 = /* @__PURE__ */ createBaseVNode("footer", { id: "footer" }, 
     /* @__PURE__ */ createBaseVNode("div", { class: "col" }, [
       /* @__PURE__ */ createBaseVNode("ul", null, [
         /* @__PURE__ */ createBaseVNode("li", null, "username (min 4 characters)"),
-        /* @__PURE__ */ createBaseVNode("li", null, "email (1 uppercase, 1 lowercase, 1 number, 1 symbol)"),
+        /* @__PURE__ */ createBaseVNode("li", null, "email (e.g. email@address.com)"),
         /* @__PURE__ */ createBaseVNode("li", null, "password (min 8 chars, 1 punctuation, 1 lowercase, 1 uppercase)")
       ])
     ])
