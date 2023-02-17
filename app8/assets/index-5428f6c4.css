@@ -1,4 +1,7 @@
 
+#mainContainer {
+        width: 90%;
+}
 #icon {
         width: 100px;
         border: solid #d0d0d0 2px;
@@ -27,11 +30,17 @@ label {
         font-style: italic;
         color: blue;
 }
-    /* #email {
-        border: red solid 2px;
-    } */
 .incorrect-input {
         border: red solid 2px;
+}
+footer {
+        display: none;
+        padding-top: 10px;
+        transform: translateY(5px);
+        border-radius: 0.5rem;
+        background-color: rgb(253, 182, 182);
+        text-align: start;
+        font-size: 0.75rem;
 }
 @media (min-width: 768px) {
 #content {

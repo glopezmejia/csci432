@@ -4392,11 +4392,6 @@ function cloneVNode(vnode, extraProps, mergeRef = false) {
 function createTextVNode(text = " ", flag = 0) {
   return createVNode(Text, null, text, flag);
 }
-function createStaticVNode(content, numberOfNodes) {
-  const vnode = createVNode(Static, null, content);
-  vnode.staticCount = numberOfNodes;
-  return vnode;
-}
 function normalizeVNode(child) {
   if (child == null || typeof child === "boolean") {
     return createVNode(Comment);
@@ -5200,20 +5195,40 @@ const _hoisted_18 = /* @__PURE__ */ createBaseVNode("label", { for: "email" }, "
 const _hoisted_19 = { class: "row" };
 const _hoisted_20 = { class: "col form-floating" };
 const _hoisted_21 = /* @__PURE__ */ createBaseVNode("label", { for: "phoneNumber" }, "Phone Number", -1);
-const _hoisted_22 = /* @__PURE__ */ createStaticVNode('<div class="row"><div class="col form-floating"><input class="form-control" type="password" id="password" name="password" placeholder="password" required><label for="password">Password</label></div></div><div class="row"><div class="col form-floating"><input class="form-control" type="password" id="password2" name="password2" placeholder="password2" required><label for="password2">Confirm Password</label></div></div>', 2);
-const _hoisted_24 = { class: "row" };
-const _hoisted_25 = { class: "col" };
-const _hoisted_26 = { class: "btn-container" };
-const _hoisted_27 = ["disabled"];
+const _hoisted_22 = { class: "row" };
+const _hoisted_23 = { class: "col form-floating" };
+const _hoisted_24 = /* @__PURE__ */ createBaseVNode("label", { for: "password" }, "Password", -1);
+const _hoisted_25 = { class: "row" };
+const _hoisted_26 = { class: "col form-floating" };
+const _hoisted_27 = /* @__PURE__ */ createBaseVNode("label", { for: "password2" }, "Confirm Password", -1);
+const _hoisted_28 = { class: "row" };
+const _hoisted_29 = { class: "col" };
+const _hoisted_30 = { class: "btn-container" };
+const _hoisted_31 = ["disabled"];
+const _hoisted_32 = /* @__PURE__ */ createBaseVNode("footer", { id: "footer" }, [
+  /* @__PURE__ */ createBaseVNode("div", { class: "row" }, [
+    /* @__PURE__ */ createBaseVNode("div", { class: "col" }, [
+      /* @__PURE__ */ createBaseVNode("ul", null, [
+        /* @__PURE__ */ createBaseVNode("li", null, "username (min 4 characters)"),
+        /* @__PURE__ */ createBaseVNode("li", null, "email (1 uppercase, 1 lowercase, 1 number, 1 symbol)"),
+        /* @__PURE__ */ createBaseVNode("li", null, "password (min 8 chars, 1 punctuation, 1 lowercase, 1 uppercase)")
+      ])
+    ])
+  ])
+], -1);
 const _sfc_main$1 = {
   __name: "CreateAcc",
   setup(__props) {
     const profilePic = ref(icon);
     const username = ref("");
     const email = ref("");
+    const password = ref("");
+    const password2 = ref("");
     const inputs = reactive({
+      isUsernameValid: false,
       isEmailValid: false,
-      isPasswordValid: false
+      isPasswordValid: false,
+      isPhoneNumberValid: false
     });
     const phoneNumber = ref("");
     let sNumber = "";
@@ -5231,6 +5246,17 @@ const _sfc_main$1 = {
       }
     }
     const emailRegex = /^(([^<>()[\]\.,;:\s@\"]+(\.[^<>()[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})/;
+    const passwordRegex = /^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[#?!@$%^&*-]).{8,}$/;
+    watch(username, () => {
+      const usernameInput = document.querySelector("#username");
+      if (username.value.length >= 4) {
+        usernameInput.classList.remove("incorrect-input");
+        inputs.isUsernameValid = true;
+      } else {
+        usernameInput.classList.add("incorrect-input");
+        inputs.isUsernameValid = false;
+      }
+    });
     watch(email, () => {
       let emailInput = document.querySelector("#email");
       if (emailRegex.test(email.value) === false) {
@@ -5243,19 +5269,55 @@ const _sfc_main$1 = {
       }
     });
     watch(phoneNumber, () => {
+      const phoneNumberInput = document.querySelector("#phoneNumber");
       sNumber = phoneNumber.value.toString();
+      sNumber = sNumber.replaceAll("-", "");
       if (sNumber.length === 10) {
-        sNumber = sNumber.replaceAll("-", "");
+        phoneNumberInput.classList.remove("incorrect-input");
         numArray = [sNumber.slice(0, 3), sNumber.slice(3, 6), sNumber.slice(6, 10)].join("-");
         phoneNumber.value = numArray;
-        console.log("number is 10 digits long");
+        inputs.isPhoneNumberValid = true;
+      } else {
+        phoneNumberInput.classList.add("incorrect-input");
+        inputs.isPhoneNumberValid = false;
+      }
+    });
+    watch([password, password2], () => {
+      let passwordInput = document.querySelector("#password");
+      let password2Input = document.querySelector("#password2");
+      if (password.value.length > 0 && password2.value.length > 0) {
+        if (passwordRegex.test(password.value) && passwordRegex.test(password2.value)) {
+          if (password.value === password2.value) {
+            passwordInput.classList.remove("incorrect-input");
+            password2Input.classList.remove("incorrect-input");
+            inputs.isPasswordValid = true;
+          } else {
+            inputs.isPasswordValid = false;
+            passwordInput.classList.add("incorrect-input");
+            password2Input.classList.add("incorrect-input");
+          }
+        } else {
+          inputs.isPasswordValid = false;
+          passwordInput.classList.add("incorrect-input");
+          password2Input.classList.add("incorrect-input");
+        }
+      } else {
+        inputs.isPasswordValid = false;
       }
     });
     watch(inputs, () => {
-      if (inputs.isEmailValid === false) {
-        isDisabled.value = true;
-      } else {
+      if (inputs.isUsernameValid && inputs.isEmailValid && inputs.isPhoneNumberValid && inputs.isPasswordValid) {
         isDisabled.value = false;
+      } else {
+        isDisabled.value = true;
+      }
+    });
+    watch([username, email, phoneNumber, password, password2], () => {
+      const footer = document.querySelector("#footer");
+      if (inputs.isUsernameValid === false || inputs.isEmailValid === false || inputs.isPhoneNumberValid === false || inputs.isPasswordValid === false) {
+        footer.style.display = "block";
+      } else {
+        footer.style.display = "none";
       }
     });
     onMounted(() => {
@@ -5336,9 +5398,40 @@ const _sfc_main$1 = {
                   _hoisted_21
                 ])
               ]),
-              _hoisted_22,
-              createBaseVNode("div", _hoisted_24, [
-                createBaseVNode("div", _hoisted_25, [
+              createBaseVNode("div", _hoisted_22, [
+                createBaseVNode("div", _hoisted_23, [
+                  withDirectives(createBaseVNode("input", {
+                    "onUpdate:modelValue": _cache[3] || (_cache[3] = ($event) => password.value = $event),
+                    class: "form-control",
+                    type: "password",
+                    id: "password",
+                    name: "password",
+                    placeholder: "password",
+                    required: ""
+                  }, null, 512), [
+                    [vModelText, password.value]
+                  ]),
+                  _hoisted_24
+                ])
+              ]),
+              createBaseVNode("div", _hoisted_25, [
+                createBaseVNode("div", _hoisted_26, [
+                  withDirectives(createBaseVNode("input", {
+                    "onUpdate:modelValue": _cache[4] || (_cache[4] = ($event) => password2.value = $event),
+                    class: "form-control",
+                    type: "password",
+                    id: "password2",
+                    name: "password2",
+                    placeholder: "password2",
+                    required: ""
+                  }, null, 512), [
+                    [vModelText, password2.value]
+                  ]),
+                  _hoisted_27
+                ])
+              ]),
+              createBaseVNode("div", _hoisted_28, [
+                createBaseVNode("div", _hoisted_29, [
                   createBaseVNode("input", {
                     class: "form-control form-control-lg",
                     onChange: uploadImg,
@@ -5349,15 +5442,16 @@ const _sfc_main$1 = {
                   }, null, 32)
                 ])
               ]),
-              createBaseVNode("div", _hoisted_26, [
+              createBaseVNode("div", _hoisted_30, [
                 createBaseVNode("button", {
                   disabled: isDisabled.value,
                   class: "btn btn-primary",
                   type: "submit"
-                }, "Sign Up", 8, _hoisted_27)
+                }, "Sign Up", 8, _hoisted_31)
               ])
             ])
-          ])
+          ]),
+          _hoisted_32
         ])
       ]);
     };
