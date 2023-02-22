@@ -5131,6 +5131,7 @@ const _sfc_main$1 = {
   ],
   setup(__props) {
     const props = __props;
+    const imgURL = new URL(props.img, import.meta.url).href;
     return (_ctx, _cache) => {
       return openBlock(), createElementBlock("div", _hoisted_1$1, [
         createBaseVNode("div", _hoisted_2$1, [
@@ -5138,7 +5139,7 @@ const _sfc_main$1 = {
           createBaseVNode("div", _hoisted_4$1, [
             createBaseVNode("img", {
               class: "img-fluid",
-              src: props.img,
+              src: unref(imgURL),
               alt: ""
             }, null, 8, _hoisted_5$1)
           ]),
@@ -5156,7 +5157,7 @@ const _sfc_main$1 = {
 };
 const track1 = {
   index: 1,
-  img: "../src/assets/images/a-ha.jpeg",
+  img: "../assets/images/a-ha.jpeg",
   title: "Take on Me",
   artist: "a-ha",
   duration: "3:47",
@@ -5164,7 +5165,7 @@ const track1 = {
 };
 const track2 = {
   index: 2,
-  img: "../src/assets/images/billie-jean.jpeg",
+  img: "../assets/images/billie-jean.jpeg",
   title: "Billie Jean",
   artist: "Michael Jackson",
   duration: "4:53",
@@ -5172,7 +5173,7 @@ const track2 = {
 };
 const track3 = {
   index: 3,
-  img: "../src/assets/images/the-police.jpeg",
+  img: "../assets/images/the-police.jpeg",
   title: "Every Breath You Take",
   artist: "The Police",
   duration: "4:13",
@@ -5180,7 +5181,7 @@ const track3 = {
 };
 const track4 = {
   index: 4,
-  img: "../src/assets/images/africa.jpeg",
+  img: "../assets/images/africa.jpeg",
   title: "Africa",
   artist: "TOTO",
   duration: "4:55",
@@ -5188,7 +5189,7 @@ const track4 = {
 };
 const track5 = {
   index: 5,
-  img: "../src/assets/images/girls-just-want.png",
+  img: "../assets/images/girls-just-want.png",
   title: "Girls Just Want to Have Fun",
   artist: "Cyndi Lauper",
   duration: "3:53",
@@ -5196,7 +5197,7 @@ const track5 = {
 };
 const track6 = {
   index: 6,
-  img: "../src/assets/images/karma.jpeg",
+  img: "../assets/images/karma.jpeg",
   title: "Karma Chameleon",
   artist: "Culture Club",
   duration: "3:56",
@@ -5204,7 +5205,7 @@ const track6 = {
 };
 const track7 = {
   index: 7,
-  img: "../src/assets/images/sweet-dreams.jpeg",
+  img: "../assets/images/sweet-dreams.jpeg",
   title: "Sweet Dreams",
   artist: "Eurythmics",
   duration: "4:53",
@@ -5212,7 +5213,7 @@ const track7 = {
 };
 const track8 = {
   index: 8,
-  img: "../src/assets/images/wham.jpg",
+  img: "../assets/images/wham.jpg",
   title: "Wake Me Up Before You Go-Go",
   artist: "Wham!",
   duration: "3:51",
@@ -5220,7 +5221,7 @@ const track8 = {
 };
 const track9 = {
   index: 9,
-  img: "../src/assets/images/livin.jpeg",
+  img: "../assets/images/livin.jpeg",
   title: "Livin' On A Prayer",
   artist: "Bon Jovi",
   duration: "4:11",
@@ -5228,7 +5229,7 @@ const track9 = {
 };
 const track10 = {
   index: 10,
-  img: "../src/assets/images/staying.jpeg",
+  img: "../assets/images/staying.jpeg",
   title: "Stayin Alive",
   artist: "Bee Gees",
   duration: "4:03",
