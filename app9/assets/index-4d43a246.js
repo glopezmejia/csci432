@@ -5096,6 +5096,18 @@ function normalizeContainer(container) {
   }
   return container;
 }
+const __vite_glob_0_0 = "/app9/assets/a-ha-add0c710.jpeg";
+const __vite_glob_0_1 = "/app9/assets/africa-61bb1f3d.jpeg";
+const __vite_glob_0_2 = "/app9/assets/billie-jean-39ccdcfb.jpeg";
+const __vite_glob_0_3 = "/app9/assets/girls-just-want-d766ac50.png";
+const __vite_glob_0_4 = "/app9/assets/karma-21c76158.jpeg";
+const __vite_glob_0_5 = "/app9/assets/livin-c03076f9.jpeg";
+const __vite_glob_0_6 = "data:image/png;base64,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DgABhg4AAYYOAAGGDgABhg4AAYYOAAGGDgABhg4AAYYOAAGGDgABhg4AAYYOAAGGDgABhg4AAYYOAAGGDgABhg4AAYYOAAGGDgABhg4AAYYOAAGGDgABhg4AAYYOAAGGDgABhg4AAYYOAAGGDgABhg4AAYYOAAGGDgABhg4AAYYOAAGGDgABhg4AAYYOAAGGDgABhg4AAYYOAAGGDgABhg4AAYYOAAGGDgABhg4AAYYOAAGGDgABhg4AAYYOAAGGDgABhg4AAYYOAAGGDgABhg4AAYYOAAGGDgABhg4AAYYOAAGGDgABhg4AAYYOAAGGDgABhg4AAYYOAAGGDgABhg4AAYYOAAGGDgABhg4AAYYOAAGGDgABhg4AAYYOAAGGDgABhg4AAYYOAAGGDgABhg4AAYYOAAGGDgABhg4AARsAAP//7NexDUMhFARBUz+0jHAF34kDrPWM9HJ0yQpBB4AAQQeAAEEHgABBB4AAQQeAAEEHgABBB4AAQQeAAEEHgABB5y/NOV9jjJ+9vfftiR7tva/v8+nWWrcngisEHQACBB0AAgQdAAIEHQACBB0AAgQdAAIEHQACBB0AAgQdAAIEHQACBB0AAgQdAAIEHQACBB0AAgQdAAIEHQACBB0AAgQdAAIEHQACBB0AAgQdAAIEHQACBB0AAgQdAAIEHQACBB0AAgQdAAIEHQACBB0AAgQdAAIEHQACBB0AAgQdAAIEHQACBB0AAgQdAAIEHQACBB0AAgQdAAIEHQACBB0AAgQdAAIEHQACBB0AAgQdAAIEHQACBB0AAgQdAAIEHQACBB0AAgQdAAIEHQACBB0AAgQdAAIEHQACBB0AAgQdAAIEHQACBB0AAgQdAAIEHQACBB0AAgQdAAIEHQACBB0AAgQdAAIEHQACBB0AAgQdAAIEHQACBB0AAgQdAAIEHQACBB0AAgQdAAIEHQACBB0AAgQdAAIEHQACBB0AAgQdAAIEHQACBB0AAgQdAAIEHQACBB0AAgQdAAIEHQACBB0AAgQdAAIEHQACBB0AAgQdAAIEHQACBB0AAgQdAAIEHQACBB0AAgQdAAIEHQACBB0AAgQdAAIEHQACBB0AAgQdAAIEHQACBB0AAgQdAAIEHQACBB0AAgQdAAIEHQACBB0AAgQdAAIEHQACBB0AAgQdAAIEHQACBB0AAgQdAAIEHQACBB0AAgQdAAIEHQACBB0AAgQdAAIEHQACBB0AAgQdAAIEHQACBB0AAgQdAAIEHQACBB0AAgQdAAIEHQACBB0AAgQdAAIEHQACBB0AAgQdAAIEHQACBB0AAgQdAAIEHQACBB0AAgQdAAIEHQACBB0AAsY559x+BADwHT90AAgQdAAIEHQACBB0AAgQdAAIEHQACBB0AAh4AwAA///t1YEMAAAAwCB/63t8JZHQAWBA6AAwIHQAGBA6AAwIHQAGhA4AA0IHgAGhA8CA0AFgQOgAMCB0ABgQOgAMCB0ABoQOAANCB4ABoQPAgNABYEDoADAgdAAYEDoADAgdAAaEDgADQgeAAaEDwIDQAWBA6AAwIHQAGBA6AAwIHQAGhA4AA0IHgAGhA8CA0AFgQOgAMCB0ABgQOgAMCB0ABoQOAANCB4ABoQPAgNABYEDoADAgdAAYEDoADAgdAAaEDgADQgeAAaEDwIDQAWBA6AAwIHQAGBA6AAwIHQAGhA4AA0IHgAGhA8CA0AFgQOgAMCB0ABgQOgAMCB0ABoQOAANCB4ABoQPAgNABYEDoADAgdAAYEDoADAgdAAaEDgADQgeAAaEDwIDQAWBA6AAwIHQAGBA6AAwIHQAGhA4AA0IHgAGhA8CA0AFgQOgAMCB0ABgQOgAMCB0ABoQOAANCB4ABoQPAgNABYEDoADAgdAAYEDoADAgdAAaEDgADQgeAAaEDwIDQAWBA6AAwIHQAGBA6AAwIHQAGhA4AA0IHgAGhA8CA0AFgQOgAMCB0ABgQOgAMCB0ABoQOAANCB4ABoQPAgNABYEDoADAgdAAYEDoADAgdAAaEDgADQgeAAaEDwIDQAWBA6AAwIHQAGBA6AAwIHQAGhA4AA0IHgAGhA8CA0AFgQOgAMCB0ABgQOgAMCB0ABoQOAANCB4ABoQPAgNABYEDoADAgdAAYEDoADAgdAAaEDgADQgeAAaEDwIDQAWBA6AAwIHQAGBA6AAwIHQAGhA4AA0IHgAGhA8CA0AFgQOgAMCB0ABgQOgAMCB0ABoQOAANCB4ABoQPAgNABYEDoADAgdAAYEDoADAgdAAaEDgADQgeAgQDshBX8S7Zp3gAAAABJRU5ErkJggg==";
+const __vite_glob_0_7 = "/app9/assets/play-12d7bdc2.png";
+const __vite_glob_0_8 = "/app9/assets/staying-8b9ebdaf.jpeg";
+const __vite_glob_0_9 = "/app9/assets/sweet-dreams-9b60cbf4.jpeg";
+const __vite_glob_0_10 = "/app9/assets/the-police-77b34ad8.jpeg";
+const __vite_glob_0_11 = "/app9/assets/wham-afbf845b.jpg";
 const Song_vue_vue_type_style_index_0_lang = "";
 const _hoisted_1$1 = { class: "container" };
 const _hoisted_2$1 = {
@@ -5131,7 +5143,8 @@ const _sfc_main$1 = {
   ],
   setup(__props) {
     const props = __props;
-    const imgURL = new URL(props.img, import.meta.url).href;
+    let imgURL = new URL((/* @__PURE__ */ Object.assign({ "../assets/images/a-ha.jpeg": __vite_glob_0_0, "../assets/images/africa.jpeg": __vite_glob_0_1, "../assets/images/billie-jean.jpeg": __vite_glob_0_2, "../assets/images/girls-just-want.png": __vite_glob_0_3, "../assets/images/karma.jpeg": __vite_glob_0_4, "../assets/images/livin.jpeg": __vite_glob_0_5, "../assets/images/pause.png": __vite_glob_0_6, "../assets/images/play.png": __vite_glob_0_7, "../assets/images/staying.jpeg": __vite_glob_0_8, "../assets/images/sweet-dreams.jpeg": __vite_glob_0_9, "../assets/images/the-police.jpeg": __vite_glob_0_10, "../assets/images/wham.jpg": __vite_glob_0_11 }))[`../assets/images/${props.img}`], self.location).href;
+    console.log(imgURL);
     return (_ctx, _cache) => {
       return openBlock(), createElementBlock("div", _hoisted_1$1, [
         createBaseVNode("div", _hoisted_2$1, [
@@ -5157,7 +5170,7 @@ const _sfc_main$1 = {
 };
 const track1 = {
   index: 1,
-  img: "../assets/images/a-ha.jpeg",
+  img: "a-ha.jpeg",
   title: "Take on Me",
   artist: "a-ha",
   duration: "3:47",
@@ -5165,7 +5178,7 @@ const track1 = {
 };
 const track2 = {
   index: 2,
-  img: "../assets/images/billie-jean.jpeg",
+  img: "billie-jean.jpeg",
   title: "Billie Jean",
   artist: "Michael Jackson",
   duration: "4:53",
@@ -5173,7 +5186,7 @@ const track2 = {
 };
 const track3 = {
   index: 3,
-  img: "../assets/images/the-police.jpeg",
+  img: "the-police.jpeg",
   title: "Every Breath You Take",
   artist: "The Police",
   duration: "4:13",
@@ -5181,7 +5194,7 @@ const track3 = {
 };
 const track4 = {
   index: 4,
-  img: "../assets/images/africa.jpeg",
+  img: "africa.jpeg",
   title: "Africa",
   artist: "TOTO",
   duration: "4:55",
@@ -5189,7 +5202,7 @@ const track4 = {
 };
 const track5 = {
   index: 5,
-  img: "../assets/images/girls-just-want.png",
+  img: "girls-just-want.png",
   title: "Girls Just Want to Have Fun",
   artist: "Cyndi Lauper",
   duration: "3:53",
@@ -5197,7 +5210,7 @@ const track5 = {
 };
 const track6 = {
   index: 6,
-  img: "../assets/images/karma.jpeg",
+  img: "karma.jpeg",
   title: "Karma Chameleon",
   artist: "Culture Club",
   duration: "3:56",
@@ -5205,7 +5218,7 @@ const track6 = {
 };
 const track7 = {
   index: 7,
-  img: "../assets/images/sweet-dreams.jpeg",
+  img: "sweet-dreams.jpeg",
   title: "Sweet Dreams",
   artist: "Eurythmics",
   duration: "4:53",
@@ -5213,7 +5226,7 @@ const track7 = {
 };
 const track8 = {
   index: 8,
-  img: "../assets/images/wham.jpg",
+  img: "wham.jpg",
   title: "Wake Me Up Before You Go-Go",
   artist: "Wham!",
   duration: "3:51",
@@ -5221,7 +5234,7 @@ const track8 = {
 };
 const track9 = {
   index: 9,
-  img: "../assets/images/livin.jpeg",
+  img: "livin.jpeg",
   title: "Livin' On A Prayer",
   artist: "Bon Jovi",
   duration: "4:11",
@@ -5229,7 +5242,7 @@ const track9 = {
 };
 const track10 = {
   index: 10,
-  img: "../assets/images/staying.jpeg",
+  img: "staying.jpeg",
   title: "Stayin Alive",
   artist: "Bee Gees",
   duration: "4:03",
