@@ -5127,7 +5127,7 @@ const _hoisted_9$1 = {
   id: "artist",
   class: "col col--styles"
 };
-const _hoisted_10 = {
+const _hoisted_10$1 = {
   id: "duration",
   class: "col-2 col--styles"
 };
@@ -5144,7 +5144,6 @@ const _sfc_main$1 = {
   setup(__props) {
     const props = __props;
     let imgURL = new URL((/* @__PURE__ */ Object.assign({ "../assets/images/a-ha.jpeg": __vite_glob_0_0, "../assets/images/africa.jpeg": __vite_glob_0_1, "../assets/images/billie-jean.jpeg": __vite_glob_0_2, "../assets/images/girls-just-want.png": __vite_glob_0_3, "../assets/images/karma.jpeg": __vite_glob_0_4, "../assets/images/livin.jpeg": __vite_glob_0_5, "../assets/images/pause.png": __vite_glob_0_6, "../assets/images/play.png": __vite_glob_0_7, "../assets/images/staying.jpeg": __vite_glob_0_8, "../assets/images/sweet-dreams.jpeg": __vite_glob_0_9, "../assets/images/the-police.jpeg": __vite_glob_0_10, "../assets/images/wham.jpg": __vite_glob_0_11 }))[`../assets/images/${props.img}`], self.location).href;
-    console.log(imgURL);
     return (_ctx, _cache) => {
       return openBlock(), createElementBlock("div", _hoisted_1$1, [
         createBaseVNode("div", _hoisted_2$1, [
@@ -5162,103 +5161,96 @@ const _sfc_main$1 = {
               createBaseVNode("div", _hoisted_9$1, toDisplayString(__props.artist), 1)
             ])
           ]),
-          createBaseVNode("div", _hoisted_10, toDisplayString(__props.duration), 1)
+          createBaseVNode("div", _hoisted_10$1, toDisplayString(__props.duration), 1)
         ])
       ]);
     };
   }
 };
-const track1 = {
-  index: 1,
-  img: "a-ha.jpeg",
-  title: "Take on Me",
-  artist: "a-ha",
-  duration: "3:47",
-  audio: ""
-};
-const track2 = {
-  index: 2,
-  img: "billie-jean.jpeg",
-  title: "Billie Jean",
-  artist: "Michael Jackson",
-  duration: "4:53",
-  audio: ""
-};
-const track3 = {
-  index: 3,
-  img: "the-police.jpeg",
-  title: "Every Breath You Take",
-  artist: "The Police",
-  duration: "4:13",
-  audio: ""
-};
-const track4 = {
-  index: 4,
-  img: "africa.jpeg",
-  title: "Africa",
-  artist: "TOTO",
-  duration: "4:55",
-  audio: ""
-};
-const track5 = {
-  index: 5,
-  img: "girls-just-want.png",
-  title: "Girls Just Want to Have Fun",
-  artist: "Cyndi Lauper",
-  duration: "3:53",
-  audio: ""
-};
-const track6 = {
-  index: 6,
-  img: "karma.jpeg",
-  title: "Karma Chameleon",
-  artist: "Culture Club",
-  duration: "3:56",
-  audio: ""
-};
-const track7 = {
-  index: 7,
-  img: "sweet-dreams.jpeg",
-  title: "Sweet Dreams",
-  artist: "Eurythmics",
-  duration: "4:53",
-  audio: ""
-};
-const track8 = {
-  index: 8,
-  img: "wham.jpg",
-  title: "Wake Me Up Before You Go-Go",
-  artist: "Wham!",
-  duration: "3:51",
-  audio: ""
-};
-const track9 = {
-  index: 9,
-  img: "livin.jpeg",
-  title: "Livin' On A Prayer",
-  artist: "Bon Jovi",
-  duration: "4:11",
-  audio: ""
-};
-const track10 = {
-  index: 10,
-  img: "staying.jpeg",
-  title: "Stayin Alive",
-  artist: "Bee Gees",
-  duration: "4:03",
-  audio: ""
-};
+const tracks = [
+  {
+    index: 1,
+    img: "a-ha.jpeg",
+    title: "Take on Me",
+    artist: "a-ha",
+    duration: "3:47",
+    audio: "../src/assets/audio/take-on-me.mp3"
+  },
+  {
+    index: 2,
+    img: "billie-jean.jpeg",
+    title: "Billie Jean",
+    artist: "Michael Jackson",
+    duration: "4:53",
+    audio: "../src/assets/audio/billie-jean.mp3"
+  },
+  {
+    index: 3,
+    img: "the-police.jpeg",
+    title: "Every Breath You Take",
+    artist: "The Police",
+    duration: "4:13",
+    audio: "../src/assets/audio/every-breath-you-take.mp3"
+  },
+  {
+    index: 4,
+    img: "africa.jpeg",
+    title: "Africa",
+    artist: "TOTO",
+    duration: "4:55",
+    audio: "../src/assets/audio/africa.mp3"
+  },
+  {
+    index: 5,
+    img: "girls-just-want.png",
+    title: "Girls Just Want to Have Fun",
+    artist: "Cyndi Lauper",
+    duration: "3:53",
+    audio: "../src/assets/audio/girls-just-want-to-have-fun.mp3"
+  },
+  {
+    index: 6,
+    img: "karma.jpeg",
+    title: "Karma Chameleon",
+    artist: "Culture Club",
+    duration: "3:56",
+    audio: "../src/assets/audio/karma.mp3"
+  },
+  {
+    index: 7,
+    img: "sweet-dreams.jpeg",
+    title: "Sweet Dreams",
+    artist: "Eurythmics",
+    duration: "4:53",
+    audio: "../src/assets/audio/sweet-dreams.mp3"
+  },
+  {
+    index: 8,
+    img: "wham.jpg",
+    title: "Wake Me Up Before You Go-Go",
+    artist: "Wham!",
+    duration: "3:51",
+    audio: "../src/assets/audio/wake-me-up-before-you-go-go.mp3"
+  },
+  {
+    index: 9,
+    img: "livin.jpeg",
+    title: "Livin' On A Prayer",
+    artist: "Bon Jovi",
+    duration: "4:11",
+    audio: "../src/assets/audio/livin-on-a-prayer.mp3"
+  },
+  {
+    index: 10,
+    img: "staying.jpeg",
+    title: "Stayin Alive",
+    artist: "Bee Gees",
+    duration: "4:03",
+    audio: "../src/assets/audio/staying-alive.mp3"
+  }
+];
 const playlist = {
-  track1,
-  track2,
-  track3,
-  track4,
-  track5,
-  track6,
-  track7,
-  track8,
-  track9,
-  track10
+  tracks
 };
 const App_vue_vue_type_style_index_0_lang = "";
 const _export_sfc = (sfc, props) => {
@@ -5273,23 +5265,36 @@ const _sfc_main = {
     Song: _sfc_main$1
   },
   setup() {
+    let response = playlist;
     const displayPlayBtn = ref("block");
     const displayPauseBtn = ref("none");
-    let response = playlist;
+    const trackArray = response.tracks.map((track2) => track2.audio);
+    console.log(trackArray);
+    const trackURL = ref(trackArray[0]);
+    let audioElm;
+    onMounted(() => {
+      audioElm = document.querySelector("audio");
+      console.log(audioElm);
+    });
     function pressedPlay() {
       displayPlayBtn.value = "none";
       displayPauseBtn.value = "block";
+      audioElm.play();
     }
     function pressedPause() {
       displayPauseBtn.value = "none";
       displayPlayBtn.value = "block";
+      audioElm.pause();
     }
     return {
       response,
       displayPlayBtn,
       displayPauseBtn,
       pressedPlay,
-      pressedPause
+      pressedPause,
+      trackArray,
+      trackURL,
+      audioElm
     };
   }
 };
@@ -5299,14 +5304,20 @@ const _hoisted_1 = /* @__PURE__ */ createBaseVNode("header", { id: "header" }, [
 const _hoisted_2 = { class: "container" };
 const _hoisted_3 = { class: "row" };
 const _hoisted_4 = { class: "col" };
-const _hoisted_5 = { class: "btn-container" };
-const _hoisted_6 = /* @__PURE__ */ createBaseVNode("p", { id: "playIcon" }, "►", -1);
-const _hoisted_7 = [
-  _hoisted_6
+const _hoisted_5 = { class: "music-component" };
+const _hoisted_6 = { id: "audio" };
+const _hoisted_7 = ["src"];
+const _hoisted_8 = { class: "btn-container" };
+const _hoisted_9 = /* @__PURE__ */ createBaseVNode("i", {
+  id: "playIcon",
+  class: "fa-solid fa-play"
+}, null, -1);
+const _hoisted_10 = [
+  _hoisted_9
 ];
-const _hoisted_8 = /* @__PURE__ */ createBaseVNode("p", { id: "pauseIcon" }, "▮▮", -1);
-const _hoisted_9 = [
-  _hoisted_8
+const _hoisted_11 = /* @__PURE__ */ createBaseVNode("p", { id: "pauseIcon" }, "▮▮", -1);
+const _hoisted_12 = [
+  _hoisted_11
 ];
 function _sfc_render(_ctx, _cache) {
   const _component_Song = resolveComponent("Song");
@@ -5316,13 +5327,13 @@ function _sfc_render(_ctx, _cache) {
       createBaseVNode("section", null, [
         createBaseVNode("div", _hoisted_3, [
           createBaseVNode("div", _hoisted_4, [
-            (openBlock(true), createElementBlock(Fragment, null, renderList(_ctx.response, (track11) => {
+            (openBlock(true), createElementBlock(Fragment, null, renderList(_ctx.response.tracks, (track2) => {
               return openBlock(), createBlock(_component_Song, {
-                index: track11.index,
-                img: track11.img,
-                title: track11.title,
-                artist: track11.artist,
-                duration: track11.duration
+                index: track2.index,
+                img: track2.img,
+                title: track2.title,
+                artist: track2.artist,
+                duration: track2.duration
               }, null, 8, ["index", "img", "title", "artist", "duration"]);
             }), 256))
           ])
@@ -5331,18 +5342,26 @@ function _sfc_render(_ctx, _cache) {
     ]),
     createBaseVNode("footer", null, [
       createBaseVNode("div", _hoisted_5, [
+        createBaseVNode("audio", _hoisted_6, [
+          createBaseVNode("source", {
+            src: _ctx.trackURL,
+            type: "audio/mpeg"
+          }, null, 8, _hoisted_7)
+        ])
+      ]),
+      createBaseVNode("div", _hoisted_8, [
         createBaseVNode("button", {
           onClick: _cache[0] || (_cache[0] = (...args) => _ctx.pressedPlay && _ctx.pressedPlay(...args)),
           id: "play-btn",
           type: "button",
           style: normalizeStyle({ display: _ctx.displayPlayBtn })
-        }, _hoisted_7, 4),
+        }, _hoisted_10, 4),
         createBaseVNode("button", {
           onClick: _cache[1] || (_cache[1] = (...args) => _ctx.pressedPause && _ctx.pressedPause(...args)),
           id: "pause-btn",
           type: "button",
           style: normalizeStyle({ display: _ctx.displayPauseBtn })
-        }, _hoisted_9, 4)
+        }, _hoisted_12, 4)
       ])
     ])
   ], 64);
