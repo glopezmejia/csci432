@@ -5271,14 +5271,15 @@ const _sfc_main = {
     let audioElm = ref(null);
     let trackArray;
     let trackURL = reactive({
-      url: "../src/assets/audio/take-on-me.mp3"
+      url: "./src/assets/audio/take-on-me.mp3"
     });
     ref("");
     const isMuted = ref("true");
+    watch(audioElm, () => {
+      console.log(audioElm.value);
+      console.log("audioElm is initialized");
+    });
     onMounted(() => {
-      if (audioElm.value !== null) {
-        console.log(audioElm.value);
-      }
     });
     function pressedPlay() {
       displayPlayBtn.value = "none";
@@ -5351,9 +5352,9 @@ function _sfc_render(_ctx, _cache) {
       createBaseVNode("div", _hoisted_5, [
         createBaseVNode("audio", {
           ref: "audioElm",
+          muted: _ctx.isMuted,
           preload: "none",
-          id: "audio",
-          muted: _ctx.isMuted
+          id: "audio"
         }, [
           createBaseVNode("source", {
             src: _ctx.trackURL.url,
