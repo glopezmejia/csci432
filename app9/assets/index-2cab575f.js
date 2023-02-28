@@ -5252,7 +5252,6 @@ const tracks = [
 const playlist = {
   tracks
 };
-const _imports_0 = "/app9/assets/take-on-me-11d71e53.mp3";
 const App_vue_vue_type_style_index_0_lang = "";
 const _export_sfc = (sfc, props) => {
   const target = sfc.__vccOpts || sfc;
@@ -5269,28 +5268,30 @@ const _sfc_main = {
     let response = playlist;
     const displayPlayBtn = ref("block");
     const displayPauseBtn = ref("none");
-    let audioElm;
+    let audioElm = ref(null);
     let trackArray;
-    let trackURL;
+    let trackURL = reactive({
+      url: "../src/assets/audio/take-on-me.mp3"
+    });
     let testArray = [];
     onMounted(() => {
-      audioElm = document.querySelector("audio");
-      console.log(audioElm);
+      console.log(audioElm.value);
       getMusic();
     });
     function getMusic() {
       trackArray = response.tracks.map((track2) => track2.audio);
-      trackURL = ref(trackArray[0]);
+      trackURL.url = trackArray[0];
+      console.log("reinitialized trackURL");
     }
     function pressedPlay() {
       displayPlayBtn.value = "none";
       displayPauseBtn.value = "block";
-      audioElm.play();
+      audioElm.value.play();
     }
     function pressedPause() {
       displayPauseBtn.value = "none";
       displayPlayBtn.value = "block";
-      audioElm.pause();
+      audioElm.value.pause();
     }
     return {
       response,
@@ -5311,25 +5312,23 @@ const _hoisted_1 = /* @__PURE__ */ createBaseVNode("header", { id: "header" }, [
 const _hoisted_2 = { class: "container" };
 const _hoisted_3 = { class: "row" };
 const _hoisted_4 = { class: "col" };
-const _hoisted_5 = /* @__PURE__ */ createBaseVNode("div", { class: "music-component" }, [
-  /* @__PURE__ */ createBaseVNode("audio", { id: "audio" }, [
-    /* @__PURE__ */ createBaseVNode("source", {
-      src: _imports_0,
-      type: "audio/mpeg"
-    })
-  ])
-], -1);
-const _hoisted_6 = { class: "btn-container" };
-const _hoisted_7 = /* @__PURE__ */ createBaseVNode("i", {
+const _hoisted_5 = { class: "music-component" };
+const _hoisted_6 = {
+  ref: "audioElm",
+  id: "audio"
+};
+const _hoisted_7 = ["src"];
+const _hoisted_8 = { class: "btn-container" };
+const _hoisted_9 = /* @__PURE__ */ createBaseVNode("i", {
   id: "playIcon",
   class: "fa-solid fa-play"
 }, null, -1);
-const _hoisted_8 = [
-  _hoisted_7
-];
-const _hoisted_9 = /* @__PURE__ */ createBaseVNode("p", { id: "pauseIcon" }, "▮▮", -1);
 const _hoisted_10 = [
   _hoisted_9
+];
+const _hoisted_11 = /* @__PURE__ */ createBaseVNode("p", { id: "pauseIcon" }, "▮▮", -1);
+const _hoisted_12 = [
+  _hoisted_11
 ];
 function _sfc_render(_ctx, _cache) {
   const _component_Song = resolveComponent("Song");
@@ -5353,20 +5352,27 @@ function _sfc_render(_ctx, _cache) {
       ])
     ]),
     createBaseVNode("footer", null, [
-      _hoisted_5,
-      createBaseVNode("div", _hoisted_6, [
+      createBaseVNode("div", _hoisted_5, [
+        createBaseVNode("audio", _hoisted_6, [
+          createBaseVNode("source", {
+            src: _ctx.trackURL.url,
+            type: "audio/mpeg"
+          }, null, 8, _hoisted_7)
+        ], 512)
+      ]),
+      createBaseVNode("div", _hoisted_8, [
         createBaseVNode("button", {
           onClick: _cache[0] || (_cache[0] = (...args) => _ctx.pressedPlay && _ctx.pressedPlay(...args)),
           id: "play-btn",
           type: "button",
           style: normalizeStyle({ display: _ctx.displayPlayBtn })
-        }, _hoisted_8, 4),
+        }, _hoisted_10, 4),
         createBaseVNode("button", {
           onClick: _cache[1] || (_cache[1] = (...args) => _ctx.pressedPause && _ctx.pressedPause(...args)),
           id: "pause-btn",
           type: "button",
           style: normalizeStyle({ display: _ctx.displayPauseBtn })
-        }, _hoisted_10, 4)
+        }, _hoisted_12, 4)
       ])
     ])
   ], 64);
