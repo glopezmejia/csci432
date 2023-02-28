@@ -5276,14 +5276,10 @@ const _sfc_main = {
     ref("");
     const isMuted = ref("true");
     onMounted(() => {
-      console.log(audioElm.value);
-      getMusic();
+      if (audioElm.value !== null) {
+        console.log(audioElm.value);
+      }
     });
-    function getMusic() {
-      trackArray = response.tracks.map((track2) => track2.audio);
-      trackURL.url = trackArray[0];
-      console.log("reinitialized trackURL");
-    }
     function pressedPlay() {
       displayPlayBtn.value = "none";
       displayPauseBtn.value = "block";
