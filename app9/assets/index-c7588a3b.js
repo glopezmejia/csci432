@@ -5273,7 +5273,8 @@ const _sfc_main = {
     let trackURL = reactive({
       url: "../src/assets/audio/take-on-me.mp3"
     });
-    let testArray = [];
+    ref("");
+    const isMuted = ref("true");
     onMounted(() => {
       console.log(audioElm.value);
       getMusic();
@@ -5287,6 +5288,7 @@ const _sfc_main = {
       displayPlayBtn.value = "none";
       displayPauseBtn.value = "block";
       audioElm.value.play();
+      isMuted.value = false;
     }
     function pressedPause() {
       displayPauseBtn.value = "none";
@@ -5302,7 +5304,8 @@ const _sfc_main = {
       trackArray,
       trackURL,
       audioElm,
-      testArray
+      isMuted
+      // audioStillLoading, 
     };
   }
 };
@@ -5313,10 +5316,7 @@ const _hoisted_2 = { class: "container" };
 const _hoisted_3 = { class: "row" };
 const _hoisted_4 = { class: "col" };
 const _hoisted_5 = { class: "music-component" };
-const _hoisted_6 = {
-  ref: "audioElm",
-  id: "audio"
-};
+const _hoisted_6 = ["muted"];
 const _hoisted_7 = ["src"];
 const _hoisted_8 = { class: "btn-container" };
 const _hoisted_9 = /* @__PURE__ */ createBaseVNode("i", {
@@ -5353,12 +5353,17 @@ function _sfc_render(_ctx, _cache) {
     ]),
     createBaseVNode("footer", null, [
       createBaseVNode("div", _hoisted_5, [
-        createBaseVNode("audio", _hoisted_6, [
+        createBaseVNode("audio", {
+          ref: "audioElm",
+          preload: "none",
+          id: "audio",
+          muted: _ctx.isMuted
+        }, [
           createBaseVNode("source", {
             src: _ctx.trackURL.url,
             type: "audio/mpeg"
           }, null, 8, _hoisted_7)
-        ], 512)
+        ], 8, _hoisted_6)
       ]),
       createBaseVNode("div", _hoisted_8, [
         createBaseVNode("button", {
