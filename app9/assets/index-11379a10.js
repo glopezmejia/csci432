@@ -5273,18 +5273,21 @@ const _sfc_main = {
     let trackURL = reactive({
       url: "./src/assets/audio/take-on-me.mp3"
     });
-    ref("");
     const isMuted = ref("true");
+    onBeforeMount(() => {
+      console.log("before mounted: " + audioElm.value);
+    });
     watch(audioElm, () => {
       console.log(audioElm.value);
       console.log("audioElm is initialized");
     });
     onMounted(() => {
     });
-    function pressedPlay() {
+    async function pressedPlay() {
       displayPlayBtn.value = "none";
       displayPauseBtn.value = "block";
-      audioElm.value.play();
+      let promise = await audioElm.value.play();
+      console.log("after await: " + promise);
       isMuted.value = false;
     }
     function pressedPause() {
