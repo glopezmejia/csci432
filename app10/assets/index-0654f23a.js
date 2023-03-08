@@ -5289,11 +5289,10 @@ const _sfc_main$1 = {
     };
   }
 };
-const _hoisted_1 = { class: "container" };
+const _hoisted_1 = { class: "container mt-3" };
 const _hoisted_2 = { class: "row flex-column" };
-const _hoisted_3 = { class: "col" };
-const _hoisted_4 = { class: "row flex-row" };
-const _hoisted_5 = { class: "col" };
+const _hoisted_3 = { class: "col p-0" };
+const _hoisted_4 = { class: "row" };
 function _sfc_render$1(_ctx, _cache, $props, $setup, $data, $options) {
   const _component_FormComponent = resolveComponent("FormComponent");
   const _component_CardComponent = resolveComponent("CardComponent");
@@ -5312,17 +5311,15 @@ function _sfc_render$1(_ctx, _cache, $props, $setup, $data, $options) {
       ])
     ]),
     createBaseVNode("div", _hoisted_4, [
-      createBaseVNode("div", _hoisted_5, [
-        (openBlock(true), createElementBlock(Fragment, null, renderList($setup.runnersArr.runner, (runner) => {
-          return openBlock(), createBlock(_component_CardComponent, {
-            firstName: runner.firstName,
-            lastName: runner.lastName,
-            email: runner.email,
-            class: "child-component",
-            id: "card-child"
-          }, null, 8, ["firstName", "lastName", "email"]);
-        }), 256))
-      ])
+      (openBlock(true), createElementBlock(Fragment, null, renderList($setup.runnersArr.runner, (runner) => {
+        return openBlock(), createBlock(_component_CardComponent, {
+          firstName: runner.firstName,
+          lastName: runner.lastName,
+          email: runner.email,
+          class: "child-component col-md-6 col-xl-4",
+          id: "card-child"
+        }, null, 8, ["firstName", "lastName", "email"]);
+      }), 256))
     ])
   ]);
 }

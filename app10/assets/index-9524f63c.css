@@ -1,7 +1,4 @@
 
-form{
-        padding: 5px;
-}
 .form-control {
         margin-bottom: 5px;
 }
@@ -18,6 +15,19 @@ img {
 #card-child {
     border: solid grey 2px;
     margin-bottom: 5px;
+}
+#form-child {
+    margin-bottom: 10px;
+}
+@media (max-width: 300px) {
+.container {
+        max-width: 300px;
+}
+}
+@media (max-width: 576px) {
+.container {
+        max-width: 450px;
+}
 }
 @media (min-width: 800px) {
 .container {
