@@ -40,13 +40,13 @@ nav[data-v-36c039a2] {
         font-weight: bold;
 }
 
-body[data-v-a690cbae] {
+body[data-v-1cc92500] {
     margin-bottom: 500px;
 }
-h1[data-v-a690cbae] {
+h1[data-v-1cc92500] {
     font-size: 1.75rem;
 }
-button[data-v-a690cbae] {
+button[data-v-1cc92500] {
     margin-top: 5px;
     background-color: white;
     border: gray 2px solid;
@@ -55,26 +55,26 @@ button[data-v-a690cbae] {
     color: rgb(36, 166, 36);
     font-weight: bold;
 }
-button[data-v-a690cbae]:hover {
+button[data-v-1cc92500]:hover {
     background-color: rgb(36, 166, 36);
     color: white;
 }
-p[data-v-a690cbae] {
+p[data-v-1cc92500] {
     margin-bottom: 5px;
 }
-#hints[data-v-a690cbae] {
+#hints[data-v-1cc92500] {
     background-color: rgb(230, 255, 230);
     padding: 10px 20px;
     border-radius: 15px;
     display: none;
 }
-#hints ul li[data-v-a690cbae] {
+#hints ul li[data-v-1cc92500] {
     font-family: 'Courier New', Courier, monospace;
 }
-.searchSpan[data-v-a690cbae] {
+.searchSpan[data-v-1cc92500] {
     font-style: italic;
 }
-.urlSpan[data-v-a690cbae]{
+.urlSpan[data-v-1cc92500]{
     font-weight: bold;
 }
 

@@ -4403,11 +4403,6 @@ function cloneVNode(vnode, extraProps, mergeRef = false) {
 function createTextVNode(text = " ", flag = 0) {
   return createVNode(Text, null, text, flag);
 }
-function createStaticVNode(content, numberOfNodes) {
-  const vnode = createVNode(Static, null, content);
-  vnode.staticCount = numberOfNodes;
-  return vnode;
-}
 function normalizeVNode(child) {
   if (child == null || typeof child === "boolean") {
     return createVNode(Comment);
@@ -7031,10 +7026,10 @@ const _hoisted_3$7 = {
   id: "header",
   class: "col-6"
 };
-const _hoisted_4$6 = { class: "col-1" };
-const _hoisted_5$5 = { class: "col-1" };
+const _hoisted_4$7 = { class: "col-1" };
+const _hoisted_5$6 = { class: "col-1" };
 const _hoisted_6$5 = { class: "col-4" };
-const _hoisted_7$6 = ["onSubmit"];
+const _hoisted_7$5 = ["onSubmit"];
 const _hoisted_8 = /* @__PURE__ */ _withScopeId$6(() => /* @__PURE__ */ createBaseVNode("label", { for: "search" }, "Search for board ...", -1));
 const _sfc_main$d = {
   __name: "Navbar",
@@ -7066,7 +7061,7 @@ const _sfc_main$d = {
         createBaseVNode("div", _hoisted_1$d, [
           createBaseVNode("div", _hoisted_2$8, [
             createBaseVNode("div", _hoisted_3$7, toDisplayString(props.header), 1),
-            createBaseVNode("div", _hoisted_4$6, [
+            createBaseVNode("div", _hoisted_4$7, [
               createVNode(unref(RouterLink), {
                 class: "link",
                 to: "/"
@@ -7077,7 +7072,7 @@ const _sfc_main$d = {
                 _: 1
               })
             ]),
-            createBaseVNode("div", _hoisted_5$5, [
+            createBaseVNode("div", _hoisted_5$6, [
               createVNode(unref(RouterLink), {
                 class: "link",
                 to: "/items"
@@ -7104,7 +7099,7 @@ const _sfc_main$d = {
                   [vModelText, searchInput.value]
                 ]),
                 _hoisted_8
-              ], 40, _hoisted_7$6)
+              ], 40, _hoisted_7$5)
             ])
           ])
         ])
@@ -7179,7 +7174,7 @@ const _hoisted_3$6 = {
   id: "itemTitle",
   class: "col-4 px-0"
 };
-const _hoisted_4$5 = { class: "col-8" };
+const _hoisted_4$6 = { class: "col-8" };
 const _sfc_main$b = {
   __name: "Item",
   props: ["item"],
@@ -7189,19 +7184,33 @@ const _sfc_main$b = {
       return openBlock(), createElementBlock("div", _hoisted_1$b, [
         createBaseVNode("div", _hoisted_2$6, [
           createBaseVNode("div", _hoisted_3$6, toDisplayString(props.item.title), 1),
-          createBaseVNode("div", _hoisted_4$5, toDisplayString(props.item.simpleDescription), 1)
+          createBaseVNode("div", _hoisted_4$6, toDisplayString(props.item.simpleDescription), 1)
         ])
       ]);
     };
   }
 };
-const ItemsView_vue_vue_type_style_index_0_scoped_a690cbae_lang = "";
-const _withScopeId$5 = (n) => (pushScopeId("data-v-a690cbae"), n = n(), popScopeId(), n);
+const ItemsView_vue_vue_type_style_index_0_scoped_1cc92500_lang = "";
+const _withScopeId$5 = (n) => (pushScopeId("data-v-1cc92500"), n = n(), popScopeId(), n);
 const _hoisted_1$a = { class: "container" };
 const _hoisted_2$5 = /* @__PURE__ */ _withScopeId$5(() => /* @__PURE__ */ createBaseVNode("h1", null, "List of Boards for Sale", -1));
-const _hoisted_3$5 = /* @__PURE__ */ createStaticVNode('<p data-v-a690cbae>To <span class="searchSpan" data-v-a690cbae>Search</span> for a board using the <span class="urlSpan" data-v-a690cbae>URL</span>, type the first word on the board&#39;s name:</p><ul data-v-a690cbae><li data-v-a690cbae>/items/leafline</li><li data-v-a690cbae>/items/swirl</li><li data-v-a690cbae>/items/drift</li><li data-v-a690cbae>/items/star</li><li data-v-a690cbae>/items/space</li></ul><p data-v-a690cbae>To <span class="searchSpan" data-v-a690cbae>Search</span> for a board using the <span class="urlSpan" data-v-a690cbae>search input</span>, type the first word on the board&#39;s name:</p><ul data-v-a690cbae><li data-v-a690cbae>leafline</li><li data-v-a690cbae>swirl</li><li data-v-a690cbae>drift</li><li data-v-a690cbae>star</li><li data-v-a690cbae>space</li></ul>', 4);
-const _hoisted_7$5 = [
-  _hoisted_3$5
+const _hoisted_3$5 = /* @__PURE__ */ _withScopeId$5(() => /* @__PURE__ */ createBaseVNode("p", null, [
+  /* @__PURE__ */ createTextVNode("To "),
+  /* @__PURE__ */ createBaseVNode("span", { class: "searchSpan" }, "Search"),
+  /* @__PURE__ */ createTextVNode(" for a board using the "),
+  /* @__PURE__ */ createBaseVNode("span", { class: "urlSpan" }, "search input"),
+  /* @__PURE__ */ createTextVNode(", type the first word on the board's name:")
+], -1));
+const _hoisted_4$5 = /* @__PURE__ */ _withScopeId$5(() => /* @__PURE__ */ createBaseVNode("ul", null, [
+  /* @__PURE__ */ createBaseVNode("li", null, "leafline"),
+  /* @__PURE__ */ createBaseVNode("li", null, "swirl"),
+  /* @__PURE__ */ createBaseVNode("li", null, "drift"),
+  /* @__PURE__ */ createBaseVNode("li", null, "star"),
+  /* @__PURE__ */ createBaseVNode("li", null, "space")
+], -1));
+const _hoisted_5$5 = [
+  _hoisted_3$5,
+  _hoisted_4$5
 ];
 const _sfc_main$a = {
   __name: "ItemsView",
@@ -7230,13 +7239,13 @@ const _sfc_main$a = {
             ref_key: "hints",
             ref: hints,
             id: "hints"
-          }, _hoisted_7$5, 512)
+          }, _hoisted_5$5, 512)
         ])
       ], 64);
     };
   }
 };
-const ItemsView = /* @__PURE__ */ _export_sfc(_sfc_main$a, [["__scopeId", "data-v-a690cbae"]]);
+const ItemsView = /* @__PURE__ */ _export_sfc(_sfc_main$a, [["__scopeId", "data-v-1cc92500"]]);
 const __vite_glob_0_0 = "/app12/assets/drift-88f115ef.webp";
 const __vite_glob_0_1 = "/app12/assets/leafline-b9b17860.webp";
 const __vite_glob_0_2 = "/app12/assets/park-3e9bf440.jpg";
