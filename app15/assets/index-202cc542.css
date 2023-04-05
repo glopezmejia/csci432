@@ -1,0 +1,105 @@
+
+.chat-window {
+        position: relative;
+        height: 450px;
+        width: 350px;
+        border-radius: 1rem;
+        /* overflow: hidden ; */
+}
+h2 {
+        font-weight: 400;
+        font-size: 1.25rem;
+        padding: 10px 0 5px 0;
+}
+.chat-window, #userMessage {
+        background-color: rgb(8, 8, 8);
+        color: white
+}
+#heading {
+        border-radius: 1rem 1rem 0 0;
+}
+#content {
+        margin: 5px 10px 100px 0; 
+        height: 350px;
+        overflow: auto;
+}
+.messageBubble {
+        background-color: rgb(0, 98, 255);
+        width:fit-content;
+        border-radius: 2rem;
+        padding: 5px 10px 5px 10px;
+        margin: 2px 0 0 0;
+        /* overflow: scroll; */
+}
+#userForm {
+        position: absolute;
+        bottom: 0;
+        padding: 5px 0 8px 15px;
+        border-top: solid gray 1px;
+        border-radius: 0 0 1rem 1rem; 
+        background-color: rgb(8, 8, 8);
+        width: 100%
+}
+#heading {
+        background-color: rgb(40, 40, 40);
+}
+#userMessage {
+        margin-right: 4px;
+        border-color: gray;
+}
+#userMessage:focus {
+        outline: none !important;
+        border-color: #719ECE;
+        box-shadow: 0 0 10px #719ECE;
+}
+#userMessage {
+        border-radius: 1rem;
+        padding: 5px 0 5px 10px;
+}
+.btn {
+        border-radius: 2rem;
+}
+.group-messages-enter-active
+    /* , .group-messages-leave-active  */ {
+    transition: all 0.5s ease;
+}
+.group-messages-enter-from
+    /* , .group-messages-leave-to  */
+    {
+    opacity: 0;
+    transform: translateX(-30px);
+}
+
+span {
+        background-color: rgb(238, 238, 238);
+        padding: 10px;
+        border-radius: 10px;
+        margin-right: 5px;
+        cursor: pointer;
+}
+.col {
+        margin: 0 0 15px 0;
+}
+.removeOrAddMessageTransition-enter-active {
+        transition: opacity 1s ease;
+}
+.removeOrAddMessageTransition-leave-active {
+        transition: opacity .25s ease;
+}
+.removeOrAddMessageTransition-enter-from, 
+    .removeOrAddMessageTransition-leave-to {
+        opacity: 0;
+}
+button {
+        border-radius: 1rem;
+        background: rgb(0, 98, 255);
+        color: white;
+        border-color: transparent;
+}
+#reset-btn {
+        width: 100px;
+}
+
+.chat {
+    margin-bottom: 20px;
+}
