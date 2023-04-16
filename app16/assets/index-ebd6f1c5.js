@@ -5550,6 +5550,8 @@ const _sfc_main$1 = {
       store.dataIndex = 0;
       store.gameRunning = false;
       store.score = 0;
+      store.answerRevealed = false;
+      isDisabled.value = false;
     }
     return (_ctx, _cache) => {
       return openBlock(), createElementBlock("main", null, [

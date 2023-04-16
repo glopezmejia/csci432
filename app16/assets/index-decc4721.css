@@ -4,7 +4,7 @@
     justify-content: end;
 }
 #score {
-    margin: 0 0 5px 5px; 
+    margin: 0 0 5px 5px;
     border: solid 1px #377771;
     border-radius: 1rem;
     background-color: #377771;
@@ -22,11 +22,12 @@
 #question {
     font-size: 1.5rem;
 }
-.button-container, .skipped-question {
+.button-container,
+.skipped-question {
     display: flex;
     justify-content: center;
 }
-.skipped-question{
+.skipped-question {
     align-items: center;
     margin: 20px 0;
     height: 40px;
